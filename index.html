@@ -20,7 +20,7 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --pink:        #F2C4C7;
+      --pink:        #F7C9CB;
       --pink-soft:   #F8DDDF;
       --pink-cream:  #FBEEEF;
       --dark:        #1A1A1A;
@@ -225,10 +225,19 @@
       padding: 1.5rem 1.25rem;
       border-radius: 4px;
       text-align: center;
-      font-family: 'Geologica', -apple-system, sans-serif;
-      font-size: 1.1rem;
-      font-weight: 500;
+    }
+    .location-name {
+      font-family: 'Spinwerad', 'Playfair Display', Georgia, serif;
+      font-size: 1.2rem;
+      font-weight: 600;
       color: var(--dark);
+      margin-bottom: 0.4rem;
+    }
+    .location-addr {
+      font-family: 'Geologica', -apple-system, sans-serif;
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.4;
     }
 
     /* ── POLICY ── */
@@ -417,7 +426,7 @@
     </p>
     <div class="about-stats">
       <div class="stat-item">
-        <div class="stat-number">9</div>
+        <div class="stat-number">8</div>
         <div class="stat-label">Розничных точек</div>
       </div>
       <div class="stat-item">
@@ -447,7 +456,7 @@
       <div class="product-card">
         <div class="product-icon">🥐</div>
         <div class="product-name">Выпечка</div>
-        <div class="product-desc">Круассаны, синнабоны, чиабатта, слойки. Свежая ежедневная выпечка.</div>
+        <div class="product-desc">Круассаны, синнабоны, чиабатта, слойки, чизкейки. Свежая ежедневная выпечка.</div>
       </div>
       <div class="product-card">
         <div class="product-icon">🍰</div>
@@ -456,13 +465,8 @@
       </div>
       <div class="product-card">
         <div class="product-icon">🧁</div>
-        <div class="product-name">Мини-десерты</div>
+        <div class="product-name">Кенди бар</div>
         <div class="product-desc">Капкейки, макаронс, профитроли. Для мероприятий и корпоративов.</div>
-      </div>
-      <div class="product-card">
-        <div class="product-icon">🍫</div>
-        <div class="product-name">Чизкейки</div>
-        <div class="product-desc">Классические и авторские: Нью-Йорк, дубайский, шоколадно-вишнёвый.</div>
       </div>
       <div class="product-card">
         <div class="product-icon">🎓</div>
@@ -477,8 +481,8 @@
 <section class="gallery" id="gallery">
   <div class="container">
     <div class="section-label">Наши работы</div>
-    <h2 class="section-title">Каждый заказ — вручную</h2>
-    <p class="section-body">От камерных бенто с индивидуальными надписями до сложных праздничных тортов со скульптурой.</p>
+    <h2 class="section-title">Каждый заказ с любовью</h2>
+    <p class="section-body">От кастомизированных бенто до сложных праздничных тортов с индивидуальным дизайном.</p>
     <div class="gallery-grid">
       <div class="gallery-item"><img src="photos/9_bento_cakes_202604102324.jpg" alt="Коллекция бенто-тортов Konti" loading="lazy"></div>
       <div class="gallery-item"><img src="photos/IMG_4138.jpg" alt="Шоколадный торт с медведем" loading="lazy"></div>
@@ -500,18 +504,17 @@
 <section class="locations" id="locations">
   <div class="container">
     <div class="section-label">География</div>
-    <h2 class="section-title">9 точек в Бишкеке</h2>
+    <h2 class="section-title">8 точек в Бишкеке</h2>
     <p class="section-body">Найдите ближайшую к вам точку Konti и купите нашу продукцию.</p>
     <div class="locations-list">
-      <div class="location-item">ГУМ</div>
-      <div class="location-item">Бета</div>
-      <div class="location-item">Азия Молл</div>
-      <div class="location-item">Мед Сити</div>
-      <div class="location-item">Моссовет</div>
-      <div class="location-item">Томми Молл</div>
-      <div class="location-item">Московская, 164</div>
-      <div class="location-item">8 микрорайон</div>
-      <div class="location-item">Арена Жаштык</div>
+      <div class="location-item"><div class="location-name">ГУМ</div><div class="location-addr">пр. Чуй, 92, этаж 0</div></div>
+      <div class="location-item"><div class="location-name">Бета 2</div><div class="location-addr">ул. Юнусалиева, 171/3</div></div>
+      <div class="location-item"><div class="location-name">Азия Молл</div><div class="location-addr">пр. Ч. Айтматова, 3</div></div>
+      <div class="location-item"><div class="location-name">Мед Сити</div><div class="location-addr">ул. Шевченко, 6</div></div>
+      <div class="location-item"><div class="location-name">Моссовет</div><div class="location-addr">ул. Абдрахманова, 129</div></div>
+      <div class="location-item"><div class="location-name">Tommi Mall</div><div class="location-addr">ул. Токомбаева, 21/1б</div></div>
+      <div class="location-item"><div class="location-name">Московская</div><div class="location-addr">ул. Московская, 164 (напротив Novotel)</div></div>
+      <div class="location-item"><div class="location-name">8 микрорайон</div><div class="location-addr">8 мкр, д. 6/1</div></div>
     </div>
   </div>
 </section>
